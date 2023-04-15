@@ -2,19 +2,29 @@
 <html>
 
    <head>
-<script async src="https://static.coinstats.app/widgets/coin-price-marquee-widget.js"></script>
-<coin-stats-marquee-widget locale="en" currency="USD" background="#1C1B1B" status-up-color="#74D492" status-down-color="#FE4747" text-color="#FFFFFF" buttons-color="#FFFFFF" border-color="rgba(255,255,255,0.15)" position="fixed-top" font="Helvetica" width="500px" coins-count="30" ></coin-stats-marquee-widget>   </head>
+
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      </head>
 	
    <body>
+	   
       <table border = "1">
          <tr>
-            <td>Row 1, Column 1</td>
-            <td>Row 1, Column 2</td>
+            <td> <qc-grid-widget theme="light" width="400px" ranking-type="top_20" currency-code="EUR"></qc-grid-widget>
+      <script src="https://quantifycrypto.com/widgets/grid/js/qc-grid-widget.js"></script></td>
+            <td> <qc-grid-widget theme="light" width="400px" ranking-type="winners_and_losers" currency-code="EUR"></qc-grid-widget>
+      <script src="https://quantifycrypto.com/widgets/grid/js/qc-grid-widget.js"></script></td>
          </tr>
          
          <tr>
-            <td>Row 2, Column 1</td>
-            <td>Row 2, Column 2</td>
+            <td>
+      <qc-grid-widget theme="dark" width="400px" ranking-type="top_20" currency-code="EUR"></qc-grid-widget>
+      <script src="https://quantifycrypto.com/widgets/grid/js/qc-grid-widget.js"></script></td>
+            <td>
+      <qc-grid-widget theme="dark" width="400px" ranking-type="winners_and_losers" currency-code="EUR"></qc-grid-widget>
+      <script src="https://quantifycrypto.com/widgets/grid/js/qc-grid-widget.js"></script></td>
          </tr>
       </table>
       
